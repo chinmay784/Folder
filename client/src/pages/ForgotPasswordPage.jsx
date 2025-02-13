@@ -13,7 +13,7 @@ const ForgotPasswordPage = () => {
     setMessage("");
     setError("");
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/request-password-reset", { email });
+      const res = await axios.post("https://folder-gxr1.onrender.com/api/auth/request-password-reset", { email });
       setMessage(res.data.message);
       navigate("/reset-password");
       toast.success("OTP sent to your email");

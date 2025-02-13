@@ -12,7 +12,7 @@ const ProfilePage = () => {
   const handleUpdate = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/auth/profile",
+        "https://folder-gxr1.onrender.com/api/auth/profile",
         { name },
         { headers: { Authorization: `${token}` } }
       );
@@ -31,7 +31,7 @@ const ProfilePage = () => {
     formData.append("profilePic", file);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/upload-profile-pic", formData, {
+      const res = await axios.post("https://folder-gxr1.onrender.com/api/auth/upload-profile-pic", formData, {
         headers: {
           Authorization: `${token}`,
           "Content-Type": "multipart/form-data",

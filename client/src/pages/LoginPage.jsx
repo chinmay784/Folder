@@ -14,7 +14,7 @@ const LoginPage = () => {
   const handleLogin = async () => {
     setError("");
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", { email, password });
+      const res = await axios.post("https://folder-gxr1.onrender.com/api/auth/login", { email, password });
       login(res.data.token, res.data.user);
       navigate("/");
       toast.success("Login successful")
