@@ -15,7 +15,7 @@ const ResetPasswordPage = () => {
     setMessage("");
     setError("");
     try {
-      const res = await axios.post("https://folder-gxr1.onrender.com/api/auth/reset-password", {
+      const res = await axios.post("https://folder-1.onrender.com/api/auth/reset-password", {
         email,
         otp,
         newPassword,
