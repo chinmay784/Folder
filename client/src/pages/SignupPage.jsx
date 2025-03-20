@@ -15,7 +15,7 @@ const SignupPage = () => {
   const handleSignup = async () => {
     setError("");
     try {
-      const res = await axios.post("https://folder-gxr1.onrender.com/api/auth/signup", { name, email, password });
+      const res = await axios.post("https://folder-1.onrender.com/api/auth/signup", { name, email, password });
       login(res.data.token, res.data.user);
       navigate("/verify-otp", { state: { email } }); // Redirect to profile page
       toast.success("Signup successful")
