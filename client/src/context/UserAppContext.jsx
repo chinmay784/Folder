@@ -12,7 +12,7 @@ const UserAppProvider = ({ children }) => {
   useEffect(() => {
     if (token) {
       axios
-        .get("https://folder-gxr1.onrender.com/api/auth/profile", {
+        .get("https://folder-1.onrender.com/api/auth/profile", {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((res) => setUser(res.data))
