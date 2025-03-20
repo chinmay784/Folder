@@ -16,7 +16,7 @@ const SearchBar = () => {
 
     try {
       const res = await axios.post(
-        "https://folder-gxr1.onrender.com/api/auth/search",
+        "https://folder-1.onrender.com/api/auth/search",
         { prompt },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -29,7 +29,7 @@ const SearchBar = () => {
 
   const fetchSearchHistory = async () => {
     try {
-      const res = await axios.get("https://folder-gxr1.onrender.com/api/auth/allsearch", {
+      const res = await axios.get("https://folder-1.onrender.com/api/auth/allsearch", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setSearchHistory(res.data.searches || []);
