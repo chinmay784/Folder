@@ -15,7 +15,7 @@ const _dirname = path.resolve();
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: "https://folder-gxr1.onrender.com", credentials: true }));
+app.use(cors({ origin: "https://folder-1.onrender.com", credentials: true }));
 app.use(cookieParser());
 
 // Connect to MongoDB
