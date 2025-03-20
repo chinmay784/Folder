@@ -12,7 +12,7 @@ const ProfilePage = () => {
   const handleUpdate = async () => {
     try {
       const res = await axios.get(
-        "https://folder-gxr1.onrender.com/api/auth/profile",
+        "https://folder-1.onrender.com/api/auth/profile",
         { name },
         { headers: { Authorization: `${token}` } }
       );
