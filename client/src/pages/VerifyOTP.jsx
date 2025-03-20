@@ -21,7 +21,7 @@ const VerifyOTP = () => {
     }
 
     try {
-      const res = await axios.post("https://folder-gxr1.onrender.com/api/auth/verify-otp", {
+      const res = await axios.post("https://folder-1.onrender.com/api/auth/verify-otp", {
         email,
         otp,
       });
